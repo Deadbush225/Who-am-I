@@ -1,0 +1,40 @@
+.bold {
+    display: inline-block;
+    font-family: "Source Serif 4";
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1;
+    position: relative;
+}
+
+.bold:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--accent);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.bold:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.text-left {
+    margin-left: 2em;
+    margin-top: 6.5em;
+    font-size: 3em;
+}
+
+.subtitle {
+    font-size: 0.4em;
+}
+
+.cl-orange {
+    color: var(--accent);
+}

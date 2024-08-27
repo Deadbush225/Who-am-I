@@ -1,0 +1,17 @@
+#profileIcon {
+    width: 3em;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50%;
+    /* position: absolute; */
+}
+
+#aboutMe {
+    justify-self: center;
+}
+
+#contact {}
+
+.menuItem {
+    margin: 0.5em 1em;
+}
