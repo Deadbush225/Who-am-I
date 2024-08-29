@@ -1,0 +1,21 @@
+@import "helpers";
+
+.inline-bold {
+    font-size: 1.5em;
+
+    @include emphasis(var(--accent));
+}
+
+.text-left {
+    margin-left: 2em;
+    margin-top: 6.5em;
+    font-size: 3em;
+}
+
+.subtitle {
+    font-size: 0.4em;
+}
+
+.cl-orange {
+    color: var(--accent);
+}

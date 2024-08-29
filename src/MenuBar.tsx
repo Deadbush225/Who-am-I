@@ -1,5 +1,5 @@
 import profileLogo from "./assets/jdenticon.svg";
-import "./MenuBar.css";
+import "./MenuBar.scss";
 
 export default function MenuBar() {
 	return (
