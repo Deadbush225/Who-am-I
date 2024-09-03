@@ -6,6 +6,7 @@ import Greetings from "./Greetings.tsx";
 import Block from "./Block.tsx";
 import SkillTiles from "./SkillTiles.tsx";
 import PortfolioTiles from "./PortfolioTiles.tsx";
+import ContactMe from "./ContactMe.tsx";
 
 import cpp from "./assets/cpp.png";
 import python from "./assets/python.png";
@@ -83,12 +84,12 @@ function App() {
 	];
 
 	return (
-		<>
+		<div className="page-wrapper">
 			<div className="firstPage">
 				<MenuBar></MenuBar>
 				<Greetings></Greetings>
 			</div>
-			<div className="page" id="About">
+			<div className="page hasContent" id="About">
 				<Block>
 					<div className="sectionTitle">About</div>
 				</Block>
@@ -107,21 +108,23 @@ function App() {
 						to the vast collection of freeware programs.
 					</div>
 				</div>
+			</div>
+			<div className="page hasContent">
 				<Block align="center">
 					<div className="sectionSubTitle">My Skills</div>
 				</Block>
 				<SkillTiles skills={skills}></SkillTiles>
+			</div>
+			<div className="page hasContent">
 				{/* <div className="page"> */}
 				<Block align="center">
 					<div className="sectionSubTitle">Portfolio</div>
 				</Block>
 				<PortfolioTiles></PortfolioTiles>
-				{/* </div> */}
 			</div>
+			{/* </div> */}
 			<div className="page">
-				<Block>
-					<div className="sectionTitle">Contact Me</div>
-				</Block>
+				<ContactMe></ContactMe>
 			</div>
 			{/* <div>
         <a href="https://vitejs.dev" target="_blank">
@@ -143,7 +146,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-		</>
+		</div>
 	);
 }
 

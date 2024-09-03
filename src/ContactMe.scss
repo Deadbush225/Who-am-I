@@ -1,0 +1,19 @@
+.contact-title {
+    position: relative;
+    top: -0.5em;
+    margin: 0 1em !important;
+}
+
+.border-container {
+    display: flex;
+
+    .border {
+        position: relative;
+        flex-grow: 1;
+        height: 0.4em;
+        background-color: var(--accent);
+        top: -0.2em;
+        border-radius: 10%;
+    }
+
+}

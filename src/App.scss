@@ -59,27 +59,43 @@
 
 .sectionTitle {
     // text-align: left;
-    margin-left: 0.5em;
     font-size: 3em;
+    margin-top: 1.75em;
+    margin-left: 0.5em;
     @include header();
     @include emphasis(white);
+
+    &.noSpacing {
+        margin: unset;
+    }
 }
 
 .sectionSubTitle {
     font-size: 3em;
-    margin-top: 1.5em;
+    margin-top: 1.3em;
     @include header();
     @include emphasis(white);
+
+    &.noSpacing {
+        margin: unset;
+    }
 }
 
 .page {
-    padding: 2rem 5rem;
-    padding-top: 6rem;
-    height: 100vh;
-    /* box-shadow: 0px 5px 20px 20px #161616; */
     box-sizing: border-box;
     z-index: -10;
     position: inherit;
+
+    &:nth-child(even) {
+        box-shadow: inset 0px 0px 20px 20px #18181833;
+        background: #2e2f33;
+    }
+}
+
+.hasContent {
+    padding: 5rem 4rem;
+    padding-top: 0rem;
+    // min-height: 100vh;
 }
 
 .centerText {
