@@ -5,6 +5,7 @@ import MenuBar from "./MenuBar.tsx";
 import Greetings from "./Greetings.tsx";
 import Block from "./Block.tsx";
 import SkillTiles from "./SkillTiles.tsx";
+import PortfolioTiles from "./PortfolioTiles.tsx";
 
 import cpp from "./assets/cpp.png";
 import python from "./assets/python.png";
@@ -87,7 +88,7 @@ function App() {
 				<MenuBar></MenuBar>
 				<Greetings></Greetings>
 			</div>
-			<div className="page">
+			<div className="page" id="About">
 				<Block>
 					<div className="sectionTitle">About</div>
 				</Block>
@@ -114,7 +115,13 @@ function App() {
 				<Block align="center">
 					<div className="sectionSubTitle">Portfolio</div>
 				</Block>
+				<PortfolioTiles></PortfolioTiles>
 				{/* </div> */}
+			</div>
+			<div className="page">
+				<Block>
+					<div className="sectionTitle">Contact Me</div>
+				</Block>
 			</div>
 			{/* <div>
         <a href="https://vitejs.dev" target="_blank">

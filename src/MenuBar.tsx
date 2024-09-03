@@ -1,5 +1,6 @@
 import profileLogo from "./assets/jdenticon.svg";
 import "./MenuBar.scss";
+import { scrollTo } from "./_helpers";
 
 export default function MenuBar() {
 	return (
@@ -7,9 +8,9 @@ export default function MenuBar() {
 			<img src={profileLogo} alt="Profile Icon" id="profileIcon" />
 
 			<div className="hBoxLayout flex-Vcenter">
-				<div className="menuItem" id="aboutMe">
+				<a className="menuItem" id="aboutMe" onClick={() => scrollTo("#About")}>
 					About me
-				</div>
+				</a>
 				<div className="menuItem" id="contact">
 					Contact
 				</div>

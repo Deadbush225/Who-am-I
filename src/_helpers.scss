@@ -28,3 +28,9 @@
 @mixin header() {
     margin-bottom: .8em;
 }
+
+.flex-center-h {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

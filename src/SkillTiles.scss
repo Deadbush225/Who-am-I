@@ -12,9 +12,9 @@
     border-radius: 8%;
     aspect-ratio: 1/1;
 
-    &:not(:first-child) {
-        margin-left: 1.5em;
-    }
+    // &:not(:first-child) {
+    //     margin-left: 1.5em;
+    // }
 
     &:hover {
         background-color: var(--accent);
@@ -27,4 +27,17 @@
     width: 3em;
     aspect-ratio: 1/1;
     object-fit: contain;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 75%;
+    gap: 0.5em;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
 }
