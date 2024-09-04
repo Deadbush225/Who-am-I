@@ -123,7 +123,7 @@ function App() {
 				<PortfolioTiles></PortfolioTiles>
 			</div>
 			{/* </div> */}
-			<div className="page">
+			<div className="page" id="Contact">
 				<ContactMe></ContactMe>
 			</div>
 			{/* <div>

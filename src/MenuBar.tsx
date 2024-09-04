@@ -11,9 +11,13 @@ export default function MenuBar() {
 				<a className="menuItem" id="aboutMe" onClick={() => scrollTo("#About")}>
 					About me
 				</a>
-				<div className="menuItem" id="contact">
+				<a
+					className="menuItem"
+					id="contact"
+					onClick={() => scrollTo("#Contact")}
+				>
 					Contact
-				</div>
+				</a>
 			</div>
 		</div>
 	);

@@ -1,4 +1,5 @@
 import "./Greetings.scss";
+import { Socials } from "./ContactMe";
 
 export default function Greetings() {
 	return (
@@ -7,6 +8,9 @@ export default function Greetings() {
 			<br></br>
 			<div className="subtitle">
 				an Aspiring Data Analyst & Software Developer
+			</div>
+			<div className="right-align">
+				<Socials vertical={true}></Socials>
 			</div>
 		</div>
 	);

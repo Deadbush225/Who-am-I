@@ -19,3 +19,8 @@
 .cl-orange {
     color: var(--accent);
 }
+
+.right-align {
+    display: flex;
+    justify-content: flex-end;
+}

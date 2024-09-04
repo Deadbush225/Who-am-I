@@ -1,4 +1,3 @@
-import { ReactElement } from "react";
 import "./SkillTiles.scss";
 
 export default function SkillTiles(props) {
