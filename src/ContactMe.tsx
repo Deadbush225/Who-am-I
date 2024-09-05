@@ -9,7 +9,7 @@ import facebook from "./assets/Contacts/facebook.png";
 import github from "./assets/Contacts/github.png";
 import linkedin from "./assets/Contacts/linked-in.png";
 import twitter from "./assets/Contacts/twitter.png";
-import whatsapp from "./assets/Contacts/whatsapp.png";
+// import whatsapp from "./assets/Contacts/whatsapp.png";
 
 function BorderedDesign(props) {
 	return (
@@ -42,23 +42,38 @@ export function Socials(props) {
 					props.vertical ? `vertical` : ""
 				} ${props.halfOffset ? `half-offset` : ""}`}
 			>
-				<img
-					src={facebook}
-					alt={facebook}
-					className="social-icon facebook"
-				></img>
-				<img src={twitter} alt={twitter} className="social-icon twitter"></img>
-				<img src={github} alt={github} className="social-icon github"></img>
-				<img
-					src={linkedin}
-					alt={linkedin}
-					className="social-icon linkedin"
-				></img>
-				<img
+				<a href="https://www.facebook.com/eliazar.inso.9/" target="_blank">
+					<img
+						src={facebook}
+						alt={facebook}
+						className="social-icon facebook"
+					></img>
+				</a>
+				<a href="https://x.com/elizar251" target="_blank">
+					<img
+						src={twitter}
+						alt={twitter}
+						className="social-icon twitter"
+					></img>
+				</a>
+				<a href="https://github.com/Deadbush225" target="_blank">
+					<img src={github} alt={github} className="social-icon github"></img>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/eliazar-inso-0342b7210/"
+					target="_blank"
+				>
+					<img
+						src={linkedin}
+						alt={linkedin}
+						className="social-icon linkedin"
+					></img>
+				</a>
+				{/* <img
 					src={whatsapp}
 					alt={whatsapp}
 					className="social-icon whatsapp"
-				></img>
+				></img> */}
 			</div>
 		</>
 	);
