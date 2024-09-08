@@ -96,9 +96,9 @@ function App() {
 				<div className="about-message-wrapper">
 					<div className="em-dash"></div>
 					<div className="about-message">
-						Started on year 2020, my curiosity about automation lead me to try
-						out different scripting programs for automating tedious tasks. I've
-						built a couple projects during that time and continues to{" "}
+						Back then in the year 2020, my curiosity about automation lead me to
+						try out different scripting programs for automating tedious tasks.
+						I've built a couple projects during that time and continues to{" "}
 						<span className="orangeText">
 							practice and sharpen my skillset to be an employable Software
 							Engineer
