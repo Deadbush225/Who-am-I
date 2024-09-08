@@ -70,3 +70,17 @@
     position: relative;
     top: -1rem;
 }
+
+@media only screen and (max-width: 500px) {
+    .contact-block-container {
+        padding-bottom: 1.7em;
+
+        * {
+            font-size: 0.7em;
+        }
+
+        .contact-block {
+            min-width: unset;
+        }
+    }
+}

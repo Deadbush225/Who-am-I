@@ -1,3 +1,5 @@
+import "./PortfolioTiles.scss";
+
 export default function PortfolioTiles() {
 	interface project {
 		name: string;

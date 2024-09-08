@@ -3,7 +3,7 @@ import { Socials } from "./ContactMe";
 
 export default function Greetings() {
 	return (
-		<div className="text-left">
+		<div className="introduction">
 			I'm <div className="inline-bold cl-orange">Eliazar Inso</div>
 			<br></br>
 			<div className="subtitle">
