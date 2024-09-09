@@ -1,14 +1,14 @@
 import "./PortfolioTiles.scss";
 
 export default function PortfolioTiles() {
-	interface project {
-		name: string;
-		link: string;
-		coverImage: string;
-	}
+	// interface project {
+	// 	name: string;
+	// 	link: string;
+	// 	coverImage: string;
+	// }
 
 	// let projects: project[] = [{ name: "test", link: "http", coverImage: "s" }];
-	let proects = [
+	const projects = [
 		<a href="https://github.com/Deadbush225/PrintingRates">
 			<img
 				src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/Deadbush225/PrintingRates.png"
@@ -35,5 +35,5 @@ export default function PortfolioTiles() {
 		</a>,
 	];
 
-	return <div className="flex-center-h">{proects}</div>;
+	return <div className="flex-center-h">{projects}</div>;
 }

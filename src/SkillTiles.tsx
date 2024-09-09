@@ -1,6 +1,12 @@
 import "./SkillTiles.scss";
 
-export default function SkillTiles(props) {
+import { Skills } from "./types";
+
+interface SkillTilesProps {
+	skills: Skills[];
+}
+
+export default function SkillTiles(props: SkillTilesProps) {
 	// const col: number = 4;
 
 	// const skillMatrix: ReactElement[][] = [];

@@ -22,10 +22,12 @@ import css from "./assets/css.png";
 
 import "./App.scss";
 
+import { Skills } from "./types.ts";
+
 function App() {
 	//   const [count, setCount] = useState(0)
 
-	const skills = [
+	const skills: Skills[] = [
 		{
 			name: "Python",
 			id: 1,

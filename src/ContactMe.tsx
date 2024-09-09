@@ -9,9 +9,21 @@ import facebook from "./assets/Contacts/facebook.png";
 import github from "./assets/Contacts/github.png";
 import linkedin from "./assets/Contacts/linked-in.png";
 import twitter from "./assets/Contacts/twitter.png";
+
+import { PropsWithChildren } from "react";
 // import whatsapp from "./assets/Contacts/whatsapp.png";
 
-function BorderedDesign(props) {
+interface ContactBlockProps {
+	icon: string;
+	info: string;
+}
+
+interface SocialsProps {
+	vertical?: boolean;
+	halfOffset?: boolean;
+}
+
+function BorderedDesign(props: PropsWithChildren) {
 	return (
 		<div className="border-container">
 			<div className="border"></div>
@@ -21,7 +33,7 @@ function BorderedDesign(props) {
 	);
 }
 
-function ContactBlock(props) {
+function ContactBlock(props: ContactBlockProps) {
 	// console.log(props.children);
 	// let icon_path = `./assets/Contacts/${props.icon}.png`;
 
@@ -34,7 +46,7 @@ function ContactBlock(props) {
 	);
 }
 
-export function Socials(props) {
+export function Socials(props: SocialsProps) {
 	return (
 		<>
 			<div
